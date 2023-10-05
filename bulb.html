@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    body {
+      margin: 0;
+      box-sizing: border-box;
+      text-align: center ;
+      position: fixed;
+    }
+    h2{
+      color :gray;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    #button{
+      height: 35px;
+      width :60px;
+      font-size:20px;
+      font-weight: 600;
+      border-radius:5px;
+      color:blue;
+      border-color: blue;
+      
+    }
+    #button:active{
+      border-color:gray;
+      color:gray;
+    }
+    img{
+      width: 80%;
+      margin-top: 20px;
+      height :400%;
+      object-fit: cover;
+      
+    }
+    
+    #img-off{
+    
+         position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      
+     
+    }
+    #img-on{
+      position: absolute;
+      display: none;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      
+    }
+    
+    }
+    
+    
+    
+    
+    
+    
+  </style>
+</head>
+
+<body>
+
+<h2>Click the button below to ON or OFF the bulb</h2>
+
+<button id="button" >OFF</button>
+
+<div class="img">
+  
+
+
+<div id="img-off">
+  <img src="bulb-off.jpg" alt="bulb">
+</div>
+
+<div id="img-on">
+  <img src="bulb-on.jpg" alt="bulb">
+</div>
+
+
+
+</div>
+<script src="bulb.js"></script>
+</body>
+
+</html>
